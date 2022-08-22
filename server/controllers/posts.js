@@ -1,10 +1,9 @@
 import mongoose from "mongoose"
 import PostMessage from "../models/postMessage.js"
 //get all posts from mongodb
-<<<<<<< HEAD
+
 //crud
-=======
->>>>>>> dc459801cbf40f76ea95f84028c5c3a87e18b72c
+
 export const getPosts=async(req,res)=>{
     try {
         const postMessages=await PostMessage.find()
