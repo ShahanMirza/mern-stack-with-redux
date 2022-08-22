@@ -14,7 +14,8 @@ jobs:
         with:
           node-version: 14.16.0
       - run: cd client && npm install
-      - run: cd ../server && npm install
+      - run: cd ..
+      - run: cd server && npm install
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
